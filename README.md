@@ -1,5 +1,6 @@
 
-📊 #${\color{red} sales\ analysis\ using\ MySQL}$
+📊 ${\color{orange} sales\ analysis\ using\ MySQL}$
+
 This project contains SQL queries to analyze sales data using MySQL. The queries help extract meaningful insights from the dataset.
 
 🔍 Key Sales Analysis Queries:
