@@ -1,13 +1,4 @@
-create table customers(cid int auto_increment primary key,name varchar(100),email varchar(100),accbal decimal(10,2));
 
-select *from customers;
-create table transactions(tid int auto_increment primary key,cid int,amount decimal(10,2),t_type varchar(10),t_date DATETIME default now(),foreign key(cid) references customers(cid));
-insert into customers(name,email,accbal) values('Alice','alice@example.com',1000.00),('bob','bob@example.com',2000.00),('chalie','charlie@example.com',1500.00);
-select *from customers;
-insert into transactions(cid,amount,t_type)values(1,500.00,'credit'),(1,-200.00,'debit'),(2,-500.00,'debit'),(3,1000.00,'credit');
-select *from transactions;
-select accbal from customers where cid=1;
-select t.tid,t.amount,t.t_type,t.t_date from transactions t join customers c on t.cid=c.cid where c.cid=1 order by t.t_date desc;
 create database company;
 #right click on tables then click table data import wizard choose dataset click next finish
 
